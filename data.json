@@ -1,36 +1,38 @@
+[
 {
-    "name": "select2",
-    "title": "Select2",
-    "description": "Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.",
-    "keywords": [
-        "select",
-        "autocomplete",
-        "typeahead",
-        "dropdown",
-        "multiselect",
-        "tag",
-        "tagging"
-    ],
-    "version": "3.4.2",
-    "author": {
-        "name": "Igor Vaynberg",
-        "url": "https://github.com/ivaynberg"
-    },
-    "licenses": [
-        {
-            "type": "Apache",
-            "url": "http://www.apache.org/licenses/LICENSE-2.0"
-        },
-        {
-            "type": "GPL v2",
-            "url": "http://www.gnu.org/licenses/gpl-2.0.html"
-        }
-    ],
-    "bugs": "https://github.com/ivaynberg/select2/issues",
-    "homepage": "http://ivaynberg.github.com/select2",
-    "docs": "http://ivaynberg.github.com/select2/",
-    "download": "https://github.com/ivaynberg/select2/tags",
-    "dependencies": {
-        "jquery": ">=1.7.1"
-    }
+"display": "HTML Tutorial",
+"url": "http://www.w3schools.com/html/default.asp"
+},
+{
+"display": "CSS Tutorial",
+"url": "http://www.w3schools.com/css/default.asp"
+},
+{
+"display": "JavaScript Tutorial",
+"url": "http://www.w3schools.com/js/default.asp"
+},
+{
+"display": "jQuery Tutorial",
+"url": "http://www.w3schools.com/jquery/default.asp"
+},
+{
+"display": "JSON Tutorial",
+"url": "http://www.w3schools.com/json/default.asp"
+},
+{
+"display": "AJAX Tutorial",
+"url": "http://www.w3schools.com/ajax/default.asp"
+},
+{
+"display": "SQL Tutorial",
+"url": "http://www.w3schools.com/sql/default.asp"
+},
+{
+"display": "PHP Tutorial",
+"url": "http://www.w3schools.com/php/default.asp"
+},
+{
+"display": "XML Tutorial",
+"url": "http://www.w3schools.com/xml/default.asp"
 }
+]
