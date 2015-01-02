@@ -11,20 +11,12 @@ and open the template in the editor.
     
 <body>
 <script type="text/javascript">
-var geocodingAPI = "http://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&sensor=true";
- 
-$.getJSON(geocodingAPI, function (json) {
-    var address = json.results[0].formatted_address;
-    console.log('Address : ', address);
- 
-    var latitude = json.results[0].geometry.location.lat;
-    console.log('Latitude : ', latitude);
- 
-    var longitude = json.results[0].geometry.location.lng;
-    console.log('Longitude : ', longitude);
-});
+var json = '["apple","orange","banana","strawberry"]';
+var data = JSON.parse(json);
+console.log(data); // ["apple", "orange", "banana", "strawberry"]
+alert( data[3] ); // "strawberry"
 </script>
-<div id="flickr-images"></div>
+
 
  
 </body>
