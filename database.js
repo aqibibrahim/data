@@ -8,11 +8,11 @@
  function
 populateDB(tx){
 tx.executeSql(
-'DROP TABLE IF EXISTS customer');
+'DROP TABLE IF EXISTS DEMO');
 tx.executeSql(
-'CREATE TABLE IF NOT EXISTS customer(id primary,user_email,nome,cognome,cell,tel,cod_fiscale,piva,istruzioni,citta_fatt,complete_billing,day_spediozione,civico,interno,nome_vis,citta_cons,cap_cons,via,complete_shipping,note,referal,amico,ultima,rank,vegan,compleano,ultima_consegna,sucessivi,consegna,girioni,num_consegne,data_registration)');
-tx.executeSql(
-'INSERT INTO customer(id primary,user_email,nome,cognome,cell,tel,cod_fiscale,piva,istruzioni,citta_fatt,complete_billing,day_spediozione,civico,interno,nome_vis,citta_cons,cap_cons,via,complete_shipping,note,referal,amico,ultima,rank,vegan,compleano,ultima_consegna,sucessivi,consegna,girioni,num_consegne,data_registration) VALUES (1,"First Row")');
+'CREATE TABLE IF NOT EXISTS DEMO(id primary,user_email,nome,cognome,cell,tel,cod_fiscale,piva,istruzioni,citta_fatt,complete_billing,day_spediozione,civico,interno,nome_vis,citta_cons,cap_cons,via,complete_shipping,note,referal,amico,ultima,rank,vegan,compleano,ultima_consegna,sucessivi,consegna,girioni,num_consegne,data_registration)');
+//tx.executeSql(
+//'INSERT INTO DEMO(id primary,user_email,nome,cognome,cell,tel,cod_fiscale,piva,istruzioni,citta_fatt,complete_billing,day_spediozione,civico,interno,nome_vis,citta_cons,cap_cons,via,complete_shipping,note,referal,amico,ultima,rank,vegan,compleano,ultima_consegna,sucessivi,consegna,girioni,num_consegne,data_registration) VALUES (1,"First Row")');
 //tx.executeSql(
 //'INSERT INTO DEMO(id,data) VALUES (2,"SECOND ROW")');
 }
@@ -52,7 +52,7 @@ document.getElementById(
 function
 queryDB(tx){
 tx.executeSql(
-'SELECT * FROM customer',[],querySuccess,errorCB);
+'SELECT * FROM DEMO',[],querySuccess,errorCB);
 }
 function
 getSqlResultSet(){
