@@ -41,7 +41,7 @@
     
     
     <gap:plugin name="org.apache.cordova.core.Device"/>
-    <gap:plugin name="org.apache.cordova.Storage" />
+    <gap:plugin name="org.apache.cordova.core.Storage" />
 
 
   <!--  <gap:plugin name="org.apache.cordova.core.FileUtils" />
