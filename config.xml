@@ -37,9 +37,10 @@
     </feature>
     
     
+    
     <gap:plugin name="org.apache.cordova.core.Device"/>
-    <gap:plugin name="org.apache.cordova.core.FileUtils" />
-    <gap:plugin name="org.apache.cordova.core.FileTransfer" />
+  <!--  <gap:plugin name="org.apache.cordova.core.FileUtils" />
+    <gap:plugin name="org.apache.cordova.core.FileTransfer" />-->
 
     
     
