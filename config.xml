@@ -35,7 +35,9 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device" />
     </feature>
-    
+     <feature name="Storage">
+        <param name="android-package" value="org.apache.cordova.storage" />
+    </feature>
     
     
     <gap:plugin name="org.apache.cordova.core.Device"/>
