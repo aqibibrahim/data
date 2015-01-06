@@ -4,8 +4,8 @@
         <title>This is test page</title>
         <script type="text/javascript" src="jquery-1.11.1.min.js"></script>    
         <script type="text/javascript" src="phonegap.js"></script>
-        <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>
         <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
         <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
         
@@ -15,7 +15,7 @@
             
             // Wait for device API libraries to load
             //
-           // document.addEventListener("deviceready", onDeviceReady, false);
+            document.addEventListener("deviceready", onDeviceReady, false);
 
             // device APIs are available
             //
@@ -64,10 +64,7 @@
                 }).done(function(json){
                     jQuery(json).each(function(index,customer){
                         var tr_html = '<tr>';
-//                        var result = jQuery.map(customer, function(val, key) {
-//                        return { type: key, color: val.color, size: val.size };
-//                                    });
-//                                    console.log(result);
+                                    
                         if(index==0){
                             jQuery(customer).each(function(index,column){
                                 tr_html += '<th>' + column + '</th>';
@@ -75,18 +72,6 @@
                         }else{
                             jQuery(customer).each(function(index,column){
                                 tr_html += '<td>' + column + '</td>';
-                                        
-                        var arr=[];
-
-                            $("td").each(function(){
-
-                                arr.push($(this).text());
-                                    });
-
-                            $.each(arr,function(index1,column){
-
-                            alert(arr[index1]);
-                            }
                                 });
                         }
                         
