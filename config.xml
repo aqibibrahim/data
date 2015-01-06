@@ -35,8 +35,8 @@
     <gap:plugin name="File" value="org.apache.cordova.core.FileUtils" />
     <gap:plugin name="FileTransfer" value="org.apache.cordova.core.FileTransfer" />
 
-    <feature name="Device">
+   <!-- <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device" />
-    </feature>
+    </feature>-->
     
 </widget>
