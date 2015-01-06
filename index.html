@@ -3,7 +3,38 @@
     <head>
         <title>This is test page</title>
         <script type="text/javascript" src="jquery-1.11.1.min.js"></script>    
+        <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
+        
         <script type="text/javascript">
+            
+            // Wait for device API libraries to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+
+            // device APIs are available
+            //
+            function onDeviceReady() {
+                var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
+                db.transaction(populateDB, errorCB, successCB);
+            }
+            
+            function errorCB(err) {
+                alert("Error processing SQL: "+err.code);
+            }
+
+            function successCB() {
+                alert("success!");
+            }
+
+            
+            function populateDB(tx) {
+                tx.executeSql('DROP TABLE IF EXISTS DEMO');
+                tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+                tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+                tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+            }
+
+            
             jQuery(document).ready(function(){
                 var url = 'http://portanaturasi.com/wp-admin/admin-ajax.php';
                 var data = {
