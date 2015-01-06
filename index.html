@@ -4,22 +4,25 @@
         <title>This is test page</title>
         <script type="text/javascript" src="jquery-1.11.1.min.js"></script>    
         <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>
+        <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
         <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
         
         <script type="text/javascript">
             
+            
+            
             // Wait for device API libraries to load
             //
-            document.addEventListener("deviceready", onDeviceReady, false);
+           // document.addEventListener("deviceready", onDeviceReady, false);
 
             // device APIs are available
             //
             
             
             
-            function onDeviceReady() {
+           /* function onDeviceReady() {
                 var db = window.openDatabase("test", "1.0", "Test DB", 1000000);
                 db.transaction(populateDB, errorCB, successCB);
             }
@@ -39,7 +42,7 @@
             function successCB() {
                 alert("success!");
             }
-
+*/
             
             
 
@@ -79,5 +82,28 @@
     </head>
 <body>
     <table id="data"></table>
+    <h2>Storage</h2>
+<blockquote>
+<p>Provides access to the devices storage options.</p>
+</blockquote>
+<h4 class="help">Based on <b>W3C Web SQL Database Spec</b> and <b>W3C Web Storage API Spec</b></h4>
+<a class="btn" onclick="createDB();">Create DB</a>
+<a class="btn" onclick="getSqlResultSet();">SQL Result Set</a>
+<div class="result-block">
+SQL Result:
+<br/><span id="sql-result"></span><br/>
+</div><br/>
+<a class="btn" onclick="writeLocalStorage();">Write LocalStorage</a>
+<a class="btn" onclick="readLocalStorage();">Read LocalStorage</a>
+<a class="btn" onclick="removeItemLocalStorage();">Remove Item</a>
+<div class="result-block">
+Local Storage:
+<span id="local-storage-result"></span><br/>
+</div>
+<!-- /scrollable -->
+<div id="footer" >
+<h1>&copy; 2012 Mobile Developer Solutions</h1>
+</div>
+<script type="text/javascript" charset="utf-8" src="database.js"></script>
 </body>
 </html>
